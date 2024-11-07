@@ -6,3 +6,78 @@ RESET
     padding: 0;
     margin: 0;
 }
+
+/*------------------
+    DEBUG-RULES
+   -----------------*/
+  .debug header> .container{
+    background-color: blue;
+    min-height: 80px;
+  }
+
+  .debug main> .container{
+    background-color: aqua;
+    min-height: 400px;
+    border: 1px dashed black;
+  }
+
+  .debug main .column{
+    background-color: red;
+    height: 100%;
+    border: 1px dashed black;
+    min-height: 400px;
+  }
+
+  .debug .col-img{
+    background-color: yellow;
+    min-height: 350px;
+    width: 100%;
+  }
+
+  .debug main .details{
+    background-color: blueviolet;
+    min-height: 50px;
+    width: 100%;
+  }
+
+
+/*------------------
+     GENERAL-RULES
+   -----------------*/
+
+   .container{
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 40px;
+   }
+
+   .display-col{
+     display: flex;
+     gap: 20px;
+   }
+
+   .column{
+    width: calc( 100% / 3);
+   }
+
+   ul{
+    list-style: none;
+   }
+
+   a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+   }
+
+   /*---------------
+      HEADER
+    --------*/
+
+    header .link , .icon{
+      width: 25%;
+    }
+
+    header .logo{
+        width: 50%;
+    }
