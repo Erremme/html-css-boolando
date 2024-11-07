@@ -20,11 +20,12 @@ RESET
    .container{
     max-width: 1000px;
     margin: auto;
+    
    }
 
    .display-col{
      display: flex;
-     gap: 20px;
+     gap: 10px;
    }
 
    .column{
@@ -42,14 +43,26 @@ RESET
     font-weight: bold;
    }
 
+   .img-fluid{
+    max-width: 100%;
+   }
+
+   section{
+    padding:40px 0;
+   }
+
+   .col-img{
+    position: relative;
+   }
+
+   span{
+    font-size: 12px;
+   }
+
    /*---------------
       HEADER
     --------*/
 
-    header{
-        position: sticky;
-        top: 0;
-    }
 
     header .link , .icon{
       width: 25%;
@@ -79,4 +92,66 @@ RESET
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        gap: 10px;
     }
+
+     /*---------------
+      MAIN
+    --------*/
+
+
+     .discount{
+        position: absolute;
+        bottom: 50px;
+        background-color: red;
+        color: #fff;
+        padding: 2px 4px;
+     }
+
+     .green{
+        position: absolute;
+        bottom: 50px;
+        left: 35px;
+        background-color: green;
+        color: #fff;
+        padding: 2px 4px;
+     }
+
+     .fa-solid.fa-heart{
+        position: absolute;
+        top: 5px;
+        right: 0;
+        background-color: #fff;
+        padding: 8px 8px;
+     }
+
+     .details> h6{
+        font-weight: lighter;
+     }
+
+     .details .now-price{
+        font-weight: bold;
+        color: red;
+     }
+
+     .details .before-price{
+        text-decoration: line-through;
+     }
+
+     .img-default{
+        display: block;
+     }
+
+     .img-hover{
+        display: none;
+       
+
+     }
+
+     .col-img:hover .img-hover{
+        display:block;
+     }
+    
+     .col-img:hover .img-default{
+        display:none;
+     }
